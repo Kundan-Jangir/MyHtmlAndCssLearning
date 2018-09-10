@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+     font-family: 'Yanone Kaffeesatz', serif;
+     font-size: 26px;
+     text-align: center;
+}
+
+hr {
+    width: 100px;
+    border: 2px solid #E4DFDA;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    clear: both;
+    overflow: auto;
+    padding-top: 1.5em; 
+}
+.name {
+    font-size: 4em;
+    color:#4281A4;
+    font-weight: 900;
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: auto 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 1em;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #E4DFDA;
+}
+
+.intro {
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(hacker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #E4DFDA;
+    padding: 7em 0;
+}
+
+.content-intro {
+    margin-top: 4em;
+    overflow: auto;
+}
+
+.content-intro h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 2.5em;
+}
+
+.content-intro span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    margin-top: 0.2em;
+}
+
+.button-style {
+    padding: 0.5em 2em;
+    margin: 0.5em;
+    background-color: #4281A4;
+    color: #E4DFDA;
+    border: 2px solid #D4B483;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+.button-style:hover {
+    background-color:#48A9A6;
+    color: #E4DFDA;
+}
+
+.about-me {
+    padding: 4em 0;
+    overflow: auto;
+}
+
+.about-me h4 {
+    color: #48A9A6;
+}
+
+.content-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-narrow {
+    float: left;
+    overflow: hidden;
+    margin-top: 2em;
+    clear: both;
+}
+
+.col-narrow h2, h3, p {
+    margin: 5px 0;
+}
+
+.col-wide {
+    width: 70%;
+    float: right;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 2.5em;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    text-decoration: none;
+    padding: 50px;
+    display: inline-block;
+}
+
+.social-icons a {
+    color: #4281A4;
+    transition: all 0.2s ease-in; 
+}
+
+
+.social-icons a:hover{
+    color: #48A9A6; 
+}
+
+.work {
+    padding: 5em 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #E4DFDA;
+    overflow: auto;
+}
+
+.contact-me {
+    padding: 3em 0;
+    overflow: auto;
+}
+
+.footer {
+    color: #E4DFDA;
+    background-color: #000000;
+    padding: 3em 0;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

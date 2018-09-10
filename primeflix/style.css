@@ -1,0 +1,336 @@
+/*#################### Defaults #################*/
+
+header,
+nav,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+label {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.container {
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box; 
+}
+
+
+/*##################### Nav bar  ##########################*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #2D3047;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnavbar li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnavbar li.topnav-right {
+    float: right;
+}
+
+ul.topnavbar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+    min-height: 16px;
+    text-transform: uppercase;
+}
+
+ul.topnavbar li a:hover{
+    background-color: #E0CA3C;
+    color: gray;
+}
+
+ul.topnavbar li.Dropdown {
+    display: none;
+}
+/*############## Custom Style ####################*/
+
+#section-1-gradient {
+   background: linear-gradient(#6457A6, #7D7ABC); 
+}
+
+div.box {
+    text-align: center;
+    background-color: white;
+    margin: 25px;
+    border-radius: 7px;
+    padding: 30px 24px 30px 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px 0.1px rgba(0,0,0,0.15)
+}
+
+div.logo-1 {
+    width: 100%;
+    transform: scale(0.5,0.5);
+}
+
+div.logo-2 {
+    width: 100%;
+    transform: scale(0.5, 0.5);
+}
+
+div.logo-3 {
+    width: 100%;
+}
+
+.leftside-col {
+    margin-left: 30%;
+}
+
+article p {
+    font-size: 28px;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-top: 20px;
+    line-height: 1.3;
+}
+h1.large {
+   color: white;
+   font-size: 56px;
+    margin: 6px;
+}
+
+h1.items {
+    font-size: 50px;
+    text-align: center;
+}
+
+h3.medium {
+   color: white;
+   font-size: 26px;
+    margin: 6px;
+}
+
+form h2 {
+    color: white;
+}
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+}
+input[type="password"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+.vidframe {
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+button {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    background-color: #23F0C7;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 7px;
+}
+
+button.joinus {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+button.joinus:hover {
+    background-color: #FFE347;
+    color: darkgray;
+}
+
+div.primeflixlogo img {
+    margin: auto;
+    display: block;
+    transform: scale(0.5, 0.5);
+    box-shadow: 2px 1px 5px 2px rgba(0,0,0,0.15), 0 -2px 2px 3px rgba(0,0,0,0.2);
+    border-radius: 7px;
+}
+
+footer.footsy {
+    background-color: #30343F; 
+    padding-left: 80px;
+}
+
+footer.footsy h1 {
+    color: white;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: white;
+    font-size: 24px;
+    line-height: 1.4;
+}
+/*############# Mobile ######################*/
+
+@media screen and (max-width: 680px){
+    ul.topnavbar li:not(:nth-child(1)) {
+     display : none;   
+    }
+    
+    ul.topnavbar li.Dropdown {
+    display: block;
+    float: right;
+    }
+    
+    ul.topnavbar.responsive li.Dropdown {
+        position: absolute;
+        right: 0;
+        top: 0;
+    } 
+    
+    ul.topnavbar.responsive {
+        position: relative;
+    }
+    
+    ul.topnavbar.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnavbar.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    .col-6,
+    .col-4,
+    .col-7,
+    .col-5,
+    .col-3{
+    width: 100%;
+    margin: 0;
+    }
+    
+    article p {
+    font-size: 15px;
+    }
+    
+    h1.items {
+    font-size: 40px;
+    text-align: center;
+}
+    
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+    
+    div.primeflixlogo img {
+        width: 100%;
+        margin: 10px;
+    }
+
+    div.vidframe,
+    div.leftside-col {
+    margin-left: 15px;
+    }
+    
+    input[type="text"]{
+    width: 325px;
+    }    
+
+    input[type="password"]{
+    width: 325px;
+    }
+    
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
